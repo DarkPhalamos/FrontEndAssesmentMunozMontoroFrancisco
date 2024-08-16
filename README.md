@@ -4,11 +4,11 @@ Esta aplicación es una prueba de evaluación para el desarrollo frontend utiliz
 
 ## PRUEBAS
 
-Consideraciones Especiales
+Consideraciones Especiales.
 
 Autenticación Simulada: La autenticación está simulada utilizando Redux Toolkit y no hay un backend real implementado. Los datos del usuario se obtienen de la API de jsonplaceholder.
 
-Por lo que para iniciar sesion se debe usar algun usuario de los que proporciona jsonplacholder, la contraseña puede ser cualquier caracter o cadena de texto.
+Por lo que para iniciar sesión se debe usar algún usuario de los que proporciona jsonplacholder, la contraseña puede ser cualquier caracter o cadena de texto.
 
 Lista de usuarios : [
 "username": "Bret",
@@ -23,7 +23,7 @@ Lista de usuarios : [
 "username": "Moriah.Stanton",
 ]
 
-Por si hubieran problemas con la instalación del proyecto se ha desplegado el mismo en esta web 
+Por si hubiera problemas con la instalación del proyecto, se ha desplegado el mismo en esta web.
 
 https://frontendassesment.franciscomunozmontoro.com/
 
@@ -31,9 +31,9 @@ https://frontendassesment.franciscomunozmontoro.com/
 
 Clona el repositorio:
 
-### `git clone https://github.com/tu-usuario/smart-water-post-app.git`
+### `git clone https://github.com/DarkPhalamos/FrontEndAssesmentMunozMontoroFrancisco.git`
 
-### `cd`
+### `cd frontendidricaassessment `
 
 Instala las dependencias del proyecto:
 
@@ -63,12 +63,12 @@ Si es la primera vez que usamos cypress deberemos ejecutar
 
 ### `npx cypress install`
 
-Si no podemos ejecutar
+Si no, podemos ejecutar.
 
 ### `npx cypress run --spec "cypress/e2e/allTests.cy.ts"`
 
-Si queremos usar la interfaz grafica de cypress
+Si queremos usar la interfaz grafica de cypress podemos ejecturar.
 
 ### `npx cypress open`
 
-Se nos abrirar la interfaz gráfica de cypress, seleccionamos E2E testing, seleccionamos Chrome como navegador. En la barra de navegación si nos vamos al apartado "Specs" nos aparecen todos los tests disponibles. Si queremos lanzarlos todos a la vez lanzamos el spec "allTest.cy.ts"
+Se nos abrirá la interfaz gráfica de cypress, seleccionamos E2E testing, seleccionamos Chrome como navegador. En la barra de navegación, si nos vamos al apartado "Specs" nos aparecen todos los tests disponibles. Si queremos lanzarlos todos a la vez, lanzamos el spec "allTest.cy.ts"
