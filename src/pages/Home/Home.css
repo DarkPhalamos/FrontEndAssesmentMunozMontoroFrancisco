@@ -1,0 +1,74 @@
+.home-container {
+    width: 64.2%;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 10px;
+  background-color: var(--background-color-four);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: var(--font-family);
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+
+
+.column {
+  flex: 1;
+  margin: 10px;
+}
+
+.latest-posts {
+  background-color: var(--background-color-tertiary);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-stats {
+  background-color: var(--background-color-tertiary);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.latest-posts h2,
+.user-stats h2 {
+  margin-bottom: 20px;
+  font-family: var(--font-family);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+  font-family: var(--font-family);
+}
+
+.table th, .table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table th {
+  background-color: var(--background-color-secondary);
+  color: var(--text-color);
+  text-align: left;
+}
+
+.button-view-all {
+  display: block;
+  margin: 20px 0 0 auto;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--background-color-secondary);
+  color: var(--text-color);
+  cursor: pointer;
+  font-family: var(--font-family);
+}
+
+.button-view-all:hover {
+  opacity: 0.8;
+}

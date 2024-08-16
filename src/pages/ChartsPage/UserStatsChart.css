@@ -1,0 +1,12 @@
+.user-stats-container {
+     width: 64.2%;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 10px;
+  background-color: var(--background-color-secondary);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: var(--font-family);
+}
+
+

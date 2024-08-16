@@ -1,0 +1,80 @@
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --toggle-border-color: #ffffff;
+  --background-color-secondary: #f0f0f0;
+  --table-row-hover-color: #dddddd;
+  --table-row-alternate-color: #f2f2f2;
+  --font-family: 'Roboto', sans-serif;
+
+}
+
+body.dark {
+  --background-color: #000000;
+  --text-color: #ffffff;
+  --toggle-border-color: #6b8096;
+  --background-color-secondary: #363537;
+  --table-row-hover-color: #444444;
+  --table-row-alternate-color: #2e2e2e;
+  --font-family: 'Roboto', sans-serif;
+
+}
+
+body {
+  min-width: 768px; 
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: all 0.25s linear;
+}
+
+button {
+  background-color: var(--background-color-secondary);
+  color: var(--text-color);
+  border: 1px solid var(--toggle-border-color);
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+    font-family: var(--font-family);
+
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .container, .content {
+    padding: 20px;
+  }
+
+  h1, h2, h3 {
+    font-size: 1.5em;
+  }
+
+  .breadcrumb-item {
+    font-size: 14px;
+  }
+}
+
+/* Estilos para pantallas pequeñas (máximo 767px) */
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+
+  .container, .content {
+    padding: 10px;
+  }
+
+  h1, h2, h3 {
+    font-size: 1.2em;
+  }
+
+  .breadcrumb-item {
+    font-size: 12px;
+  }
+}

@@ -1,46 +1,74 @@
-# Getting Started with Create React App
+# CRUD POST APP
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Esta aplicación es una prueba de evaluación para el desarrollo frontend utilizando React, TypeScript, Redux Toolkit, RTK Query, y i18next. La aplicación permite a los usuarios gestionar posts (crear, leer, actualizar y eliminar), visualizar comentarios y ver una gráfica con el número de posts y comentarios por usuario.
 
-## Available Scripts
+## PRUEBAS
 
-In the project directory, you can run:
+Consideraciones Especiales
+
+Autenticación Simulada: La autenticación está simulada utilizando Redux Toolkit y no hay un backend real implementado. Los datos del usuario se obtienen de la API de jsonplaceholder.
+
+Por lo que para iniciar sesion se debe usar algun usuario de los que proporciona jsonplacholder, la contraseña puede ser cualquier caracter o cadena de texto.
+
+Lista de usuarios : [
+"username": "Bret",
+"username": "Antonette",
+"username": "Samantha",
+"username": "Karianne",
+"username": "Kamren",
+"username": "Leopoldo_Corkery",
+"username": "Elwyn.Skiles",
+"username": "Maxime_Nienow",
+"username": "Delphine",
+"username": "Moriah.Stanton",
+]
+
+Por si hubieran problemas con la instalación del proyecto se ha desplegado el mismo en esta web 
+
+https://frontendassesment.franciscomunozmontoro.com/
+
+## Instalación
+
+Clona el repositorio:
+
+### `git clone https://github.com/tu-usuario/smart-water-post-app.git`
+
+### `cd`
+
+Instala las dependencias del proyecto:
+
+### `npm install`
+
+# EJECUCION
+
+Desarrollador
+
+Para iniciar el entorno de desarrollo:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Esto abrirá la aplicación en http://localhost:3000 u otro puerto si el 3000 se encuentra ocupado.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# PRUEBAS
 
-### `npm test`
+Este proyecto incluye pruebas end-to-end utilizando Cypress. Para ejecutar las pruebas:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Inicia el servidor de desarrollo:
 
-### `npm run build`
+### `npm start`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+En otra terminal, ejecuta las pruebas:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Si es la primera vez que usamos cypress deberemos ejecutar
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### `npx cypress install`
 
-### `npm run eject`
+Si no podemos ejecutar
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### `npx cypress run --spec "cypress/e2e/allTests.cy.ts"`
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Si queremos usar la interfaz grafica de cypress
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### `npx cypress open`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Se nos abrirar la interfaz gráfica de cypress, seleccionamos E2E testing, seleccionamos Chrome como navegador. En la barra de navegación si nos vamos al apartado "Specs" nos aparecen todos los tests disponibles. Si queremos lanzarlos todos a la vez lanzamos el spec "allTest.cy.ts"
